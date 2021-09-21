@@ -8,18 +8,28 @@ fetch(api).then(function(response) {
     console.log(response);
     response.json().then(function(data) {
       console.log(data);
+ 
+
+var todayWeather = document.getElementById("select-city");
+
+  todayWeather.innerHTML = "";
+
+  var weatherTitle = document.createElement("h1");
+  var tempSection = document.createElement("p");
+  var icon = document.createElement("img");
+
+  weatherTitle.textContent = "Weather:"
+  todayWeather.appendChild(weatherTitle);
+
+  tempSection.textContent = "Temperature: " + data.main.temp;
+  todayWeather.appendChild(tempSection);
+
+  icon.textContent = "http://openweathermap.org/img/w/" + icon + ".png";
+  todayWeather.appendChild(icon);
+
+      });
     });
-  });
-};
-
-var weatherdisplay = document.getElementById("city-view");
-
-weatherdisplay.innerHTML = "";
-
-var cities = document.createElement("h2");
-
-//cities.textContent = "Weather: " + data.weather;
-//weatherdisplay.appendChild(cities);
+ };
     
 weatherApp();
 
