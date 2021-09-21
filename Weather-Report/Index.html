@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Weather Report</title>
+</head>
+<body>
+    <header>
+        <h1>Weather Dashbord</h1>
+    </header>
+    
+        <div class="container">
+            <div class="row">
+              <div class="col-3">
+                <div class="card">
+                <div class="search-body">
+                <form id="user-search">
+                <label for="search-city" id="city-view">Search for a city:  </label>
+                <input type="search" id="city"></input></form>
+                <button type="submit" class="btn">Search</button>
+              </div>
+        </div>
+    </div>
+    <div class="col-9" id="select-city">
+    <h2 id="info"></h2>
+    </div>
+            </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-9">
+            <h2 class="foreCast">5-day ForeCast:</h2>
+        </div>
+        
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/code.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+header {
+    background-color: lightblue;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    
+}
+
+#select-city {
+    border: 1px solid black;
+    height: 300px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 30px;
+    position:relative;
+    background-color: lightgray;
+    margin-bottom: 20px;
+}
+
+.btn {
+    font-size: 25px;
+    background-color: lightgray;
+    margin: 25px 0 15px 75px;
+}
+
+form {
+    text-align: center;
+}
+
